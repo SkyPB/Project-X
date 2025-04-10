@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Take the quiz below to find your perfect getaway.</p>
+      </div>
+    </header>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h2>Find Your Perfect Trip</h2>
+
+      <div class="quiz-question">
+        <p>What's your vibe?</p>
+        <div class="quiz-options">
+          <button data-key="vibe" data-value="beach">🌴 Beach</button>
+          <button data-key="vibe" data-value="city">🏙️ City</button>
+          <button data-key="vibe" data-value="nature">🌲 Nature</button>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>Your budget range?</p>
+        <div class="quiz-options">
+          <button data-key="budget" data-value="low">$</button>
+          <button data-key="budget" data-value="medium">$$</button>
+          <button data-key="budget" data-value="high">$$$</button>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <p>Preferred weather?</p>
+        <div class="quiz-options">
+          <button data-key="weather" data-value="warm">☀️ Warm</button>
+          <button data-key="weather" data-value="cold">❄️ Cold</button>
+          <button data-key="weather" data-value="mild">⛅ Mild</button>
+        </div>
+      </div>
+
+      <button id="submitQuiz">Get My Destination</button>
+    </section>
+
+    <!-- Fun Travel Facts -->
+    <section id="travel-facts">
+      <h3>Did You Know?</h3>
+      <p id="fun-fact"></p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h3>What Travelers Are Saying</h3>
+      <div class="testimonial-card">
+        <p>
+          "I found a hidden gem in Portugal using this app. Incredible
+          experience!"
+        </p>
+        <span>- Alex T.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"I loved the quiz — ended up booking a solo trip to Iceland!"</p>
+        <span>- Bianca M.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>
+          "This was the easiest way I’ve ever planned a vacation. Game changer!"
+        </p>
+        <span>- Daniel K.</span>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="result-section">
+      <h2>Recommended Destinations</h2>
+      <div id="recommendations"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

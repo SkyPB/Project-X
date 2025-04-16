@@ -11,20 +11,6 @@ const travelFacts = [
 document.getElementById("fun-fact").textContent =
   travelFacts[Math.floor(Math.random() * travelFacts.length)];
 
-// Quiz input
-document.querySelectorAll(".quiz-options button").forEach((button) => {
-  button.addEventListener("click", () => {
-    const key = button.getAttribute("data-key");
-    preferences[key] = button.getAttribute("data-value");
-
-    const group = button.parentElement;
-    group
-      .querySelectorAll("button")
-      .forEach((btn) => btn.classList.remove("selected"));
-    button.classList.add("selected");
-  });
-});
-
 document.getElementById("submitQuiz").addEventListener("click", () => {
   console.log("User preferences:", preferences);
 

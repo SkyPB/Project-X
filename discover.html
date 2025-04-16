@@ -17,42 +17,28 @@
     <header class="hero">
       <div class="hero-content">
         <h1>Discover Your Next Adventure</h1>
-        <p>Take the quiz below to find your perfect getaway.</p>
+        <!-- <p>Take the quiz below to find your perfect getaway.</p> -->
       </div>
     </header>
 
-    <!-- Quiz Section -->
-    <section id="quiz">
-      <h2>Find Your Perfect Trip</h2>
+    <section id="tour-search">
+      <h2>Search Tours</h2>
+      <form id="tourForm">
+        <input
+          type="text"
+          id="destinationInput"
+          placeholder="Enter a destination (e.g., Peru)"
+          required
+        />
+        <input type="date" id="startDate" required />
+        <input type="date" id="endDate" required />
+        <button type="submit">Find Tours</button>
+      </form>
+    </section>
 
-      <div class="quiz-question">
-        <p>What's your vibe?</p>
-        <div class="quiz-options">
-          <button data-key="vibe" data-value="beach">🌴 Beach</button>
-          <button data-key="vibe" data-value="city">🏙️ City</button>
-          <button data-key="vibe" data-value="nature">🌲 Nature</button>
-        </div>
-      </div>
-
-      <div class="quiz-question">
-        <p>Your budget range?</p>
-        <div class="quiz-options">
-          <button data-key="budget" data-value="low">$</button>
-          <button data-key="budget" data-value="medium">$$</button>
-          <button data-key="budget" data-value="high">$$$</button>
-        </div>
-      </div>
-
-      <div class="quiz-question">
-        <p>Preferred weather?</p>
-        <div class="quiz-options">
-          <button data-key="weather" data-value="warm">☀️ Warm</button>
-          <button data-key="weather" data-value="cold">❄️ Cold</button>
-          <button data-key="weather" data-value="mild">⛅ Mild</button>
-        </div>
-      </div>
-
-      <button id="submitQuiz">Get My Destination</button>
+    <section id="tour-results">
+      <h3>Available Tours</h3>
+      <div id="tour-container"></div>
     </section>
 
     <!-- Fun Travel Facts -->
@@ -84,10 +70,10 @@
     </section>
 
     <!-- Results Section -->
-    <section id="result-section">
+    <!-- <section id="result-section">
       <h2>Recommended Destinations</h2>
       <div id="recommendations"></div>
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
   </body>

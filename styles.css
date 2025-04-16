@@ -59,6 +59,29 @@ body {
   transform: scale(1.05);
 }
 
+#tour-search {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#tour-search input,
+#tour-search button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#tour-results {
+  padding: 20px;
+  text-align: center;
+}
+
+#tour-container .destination-card {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
 #filter-section {
   background-color: #fff3e0;
   padding: 30px 10px;

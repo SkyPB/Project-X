@@ -146,23 +146,6 @@ body {
   animation: fadeIn 1s ease forwards;
 }
 
-.quiz-options button {
-  margin: 10px;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #ffecd2;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.quiz-options button:hover,
-.quiz-options button.selected {
-  background-color: #ffc3a0;
-  transform: scale(1.05);
-}
-
 #travel-facts {
   background-color: #e0f7fa;
   padding: 20px;

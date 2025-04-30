@@ -3,42 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Discover Your Next Adventure</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover Destinations</a></li>
+        <li><a href="discover.html">Discover</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+
     <header class="hero">
       <div class="hero-content">
         <h1>Discover Your Next Adventure</h1>
-        <!-- <p>Take the quiz below to find your perfect getaway.</p> -->
       </div>
     </header>
 
+    <!-- Travel Search Form -->
     <section id="tour-search">
-      <h2>Search Tours</h2>
+      <h2>Travel Destination</h2>
       <form id="tourForm">
         <input
           type="text"
-          id="destinationInput"
-          placeholder="Enter a destination (e.g., Peru)"
+          id="locationInput"
+          placeholder="Enter a destination (e.g., Paris)"
           required
         />
-        <input type="date" id="startDate" required />
-        <input type="date" id="endDate" required />
-        <button type="submit">Find Tours</button>
+        <input type="date" id="startDate" placeholder="Start Date" />
+        <input type="date" id="endDate" placeholder="End Date" />
+        <button type="submit">Search</button>
       </form>
     </section>
 
+    <!-- Tours & Activities Results -->
     <section id="tour-results">
-      <h3>Available Tours</h3>
-      <div id="tour-container"></div>
+      <h3>Find Tours & Activities</h3>
+      <div id="recommendations"></div>
     </section>
 
     <!-- Fun Travel Facts -->
@@ -68,12 +71,6 @@
         <span>- Daniel K.</span>
       </div>
     </section>
-
-    <!-- Results Section -->
-    <!-- <section id="result-section">
-      <h2>Recommended Destinations</h2>
-      <div id="recommendations"></div>
-    </section> -->
 
     <script src="script.js"></script>
   </body>
